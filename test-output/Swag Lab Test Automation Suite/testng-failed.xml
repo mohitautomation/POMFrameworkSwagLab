@@ -11,8 +11,26 @@
           <include name="start"/>
           <include name="checkoutInfoTest"/>
           <include name="teardown"/>
+          <include name="checkOutTest"/>
+          <include name="validateCartPageTitleTest"/>
         </methods>
       </class> <!-- com.sauce.qa.testcases.CartPageTest -->
+      <class name="com.sauce.qa.testcases.ProductPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="addProductTest"/>
+          <include name="setUp"/>
+          <include name="ProductPageTitleTest"/>
+        </methods>
+      </class> <!-- com.sauce.qa.testcases.ProductPageTest -->
+      <class name="com.sauce.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="LoginTest"/>
+          <include name="setUp"/>
+          <include name="LoginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.sauce.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Swag Lab Application Test(failed) -->
 </suite> <!-- Failed suite [Swag Lab Test Automation Suite] -->

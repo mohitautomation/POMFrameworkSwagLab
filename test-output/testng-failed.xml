@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Swag Lab Test Automation Suite]">
+  <listeners>
+    <listener class-name="com.qa.ExtentReport.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Swag Lab Application Test(failed)">
     <classes>
       <class name="com.sauce.qa.testcases.CartPageTest">
         <methods>
           <include name="start"/>
-          <include name="checkoutInfoTest" invocation-numbers="0"/>
+          <include name="checkoutInfoTest"/>
           <include name="teardown"/>
+          <include name="checkOutTest"/>
+          <include name="validateCartPageTitleTest"/>
         </methods>
       </class> <!-- com.sauce.qa.testcases.CartPageTest -->
+      <class name="com.sauce.qa.testcases.ProductPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="addProductTest"/>
+          <include name="setUp"/>
+          <include name="ProductPageTitleTest"/>
+        </methods>
+      </class> <!-- com.sauce.qa.testcases.ProductPageTest -->
+      <class name="com.sauce.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="LoginTest"/>
+          <include name="setUp"/>
+          <include name="LoginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.sauce.qa.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Swag Lab Application Test(failed) -->
+</suite> <!-- Failed suite [Swag Lab Test Automation Suite] -->
