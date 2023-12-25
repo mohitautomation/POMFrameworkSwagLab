@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Swag Lab Test Automation Suite">
+	<test name="Swag Lab Application Test">
+		
+		<listeners>
+		<listener class-name="com.qa.ExtentReport.ExtentReporterNG" />
+	    </listeners>
+		
+		<classes>			
+			<class name="com.sauce.qa.testcases.LoginPageTest"></class>
+			<class name="com.sauce.qa.testcases.ProductPageTest"></class>
+			<class name="com.sauce.qa.testcases.CartPageTest"></class>
+		</classes>
+		
+		</test>
+		</suite> 
