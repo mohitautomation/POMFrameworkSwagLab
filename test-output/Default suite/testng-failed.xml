@@ -5,8 +5,8 @@
     <classes>
       <class name="com.sauce.qa.testcases.CartPageTest">
         <methods>
+          <include name="checkoutInfoTestParameters"/>
           <include name="start"/>
-          <include name="checkoutInfoTest" invocation-numbers="0"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- com.sauce.qa.testcases.CartPageTest -->

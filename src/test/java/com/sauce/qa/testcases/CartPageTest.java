@@ -16,6 +16,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.sauce.qa.base.TestBase;
@@ -80,6 +81,14 @@ public class CartPageTest extends TestBase{
 	{
 		cartPge.checkOut();
 		//cartPge.checkoutInformation("Mohit" , "Negi" , "234234");
+		cartPge.checkoutInformation(FirstName,LastName,PostalCode);
+	}
+	
+	@Test(priority = 4)
+	@Parameters({"FirstName","LastName","PostalCode"})
+	public void checkoutInfoTestParameters(String FirstName , String LastName , String PostalCode) throws InterruptedException
+	{
+		cartPge.checkOut();
 		cartPge.checkoutInformation(FirstName,LastName,PostalCode);
 	}
 	
